@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - Delicious Burgers, Pizzas, and More in Town!</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./images/hero-bg.jpg">
+</head>
+
+<body id="top">
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">Foodie<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <button class="btn btn-hover">Reservation</button>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Box -->
+  <div class="search-container" data-search-container>
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..." class="search-input">
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+  </div>
+
+  <main>
+    <article>
+      <!-- Hero -->
+      <section class="hero" id="home" style="background-image: url('./images/hero-bg.jpg')">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">Eat Sleep And</p>
+            <h2 class="h1 hero-title">Supper delicious Burger in town!</h2>
+            <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
+            <button class="btn">Book A Table</button>
+          </div>
+          <figure class="hero-banner">
+            <img src="./images/hero-banner-bg.png" width="820" height="716" alt="Hero background decoration" aria-hidden="true"
+              class="w-100 hero-img-bg">
+            <img src="./images/hero-banner.png" width="700" height="637" loading="lazy" alt="Delicious Burger"
+              class="w-100 hero-img">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Promo -->
+      <section class="section section-divider white promo">
+        <div class="container">
+          <ul class="promo-list has-scrollbar">
+            <li class="promo-item">
+              <div class="promo-card">
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none">
+                    <!-- SVG content remains unchanged -->
+                  </svg>
+                </div>
+                <h3 class="h3 card-title">Mexican Pizza</h3>
+                <p class="card-text">Food is any substance consumed to provide nutritional support for an organism.</p>
+                <img src="./images/promo-1.png" width="300" height="300" loading="lazy" alt="Mexican Pizza"
+                  class="w-100 card-banner">
+              </div>
+            </li>
+            <!-- Other promo items remain unchanged -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+          <div class="about-banner">
+            <img src="./images/about-banner.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+            <img src="./images/sale-shape-red.png" width="216" height="226" alt="Get up to 50% off now"
+              class="abs-img scale-up-anim">
+          </div>
+          <div class="about-content">
+            <h2 class="h2 section-title">
+              Caferio, Burgers, and Best Pizzas
+              <span class="span">in Town!</span>
+            </h2>
+            <p class="section-text">
+              The restaurants in Hangzhou also catered to many northern Chinese who had fled south from Kaifeng during
+              the Jurchen invasion of the 1120s, while it is also known that many restaurants were run by families.
+            </p>
+            <ul class="about-list">
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="span">Delicious & Healthy Foods</span>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="span">Spacious Family And Kids Zone</span>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="span">Music & Other Facilities</span>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="span">Fastest Food Home Delivery</span>
+              </li>
+            </ul>
+            <button class="btn btn-hover">Order Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Food Menu -->
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+          <p class="section-subtitle">Popular Dishes</p>
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+          <ul class="fiter-list">
+            <li>
+              <button class="filter-btn active">All</button>
+            </li>
+            <li>
+              <button class="filter-btn">Pizza</button>
+            </li>
+            <li>
+              <button class="filter-btn">Burger</button>
+            </li>
+            <li>
+              <button class="filter-btn">Drinks</button>
+            </li>
+            <li>
+              <button class="filter-btn">Sandwich</button>
+            </li>
+          </ul>
+          <ul class="food-menu-list">
+            <li>
+              <div class="food-menu-card">
+                <div class="card-banner">
+                  <img src="./images/food-menu-1.png" width="300" height="300" loading="lazy"
+                    alt="Fried Chicken Unlimited" class="w-100">
+                  <div class="badge">-15%</div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+                <div class="wrapper">
+                  <p class="category">Chicken</p>
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+                <h3 class="h3 card-title">Fried Chicken Unlimited</h3>
+                <div class="price-wrapper">
+                  <p class="price-text">Price:</p>
+                  <data class="price">$49.00</data>
+                  <del class="del">$69.00</del>
+                </div>
+              </div>
+            </li>
+            <!-- Other food menu items remain unchanged -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section section-divider white cta" style="background-image: url('./images/hero-bg.jpg')">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="h2 section-title">
+              The Foodie Has Excellent
+              <span class="span">Quality Burgers!</span>
+            </h2>
+            <p class="section-text">
+              The restaurants in Hangzhou also catered to many northern Chinese who had fled south from Kaifeng during
+              the Jurchen invasion of the 1120s, while it is also known that many restaurants were run by families.
+            </p>
+            <button class="btn btn-hover">Order Now</button>
+          </div>
+          <figure class="cta-banner">
+            <img src="./images/cta-banner.png" width="700" height="637" loading="lazy" alt="Delicious Burger"
+              class="w-100 cta-img">
+            <img src="./images/sale-shape.png" width="216" height="226" loading="lazy" alt="Get up to 50% off now"
+              class="abs-img scale-up-anim">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Delivery -->
+      <section class="section section-divider gray delivery">
+        <div class="container">
+          <div class="delivery-content">
+            <h2 class="h2 section-title">
+              A Moment of Delivery on <span class="span">Right Time</span> & Place
+            </h2>
+            <p class="section-text">
+              The restaurants in Hangzhou also catered to many northern Chinese who had fled south from Kaifeng during
+              the Jurchen invasion of the 1120s, while it is also known that many restaurants were run by families.
+            </p>
+            <button class="btn btn-hover">Order Now</button>
+          </div>
+          <figure class="delivery-banner">
+            <img src="./images/delivery-banner-bg.png" width="700" height="602" loading="lazy" alt="Clouds background"
+              class="w-100">
+            <img src="./images/delivery-boy.svg" width="1000" height="880" loading="lazy" alt="Delivery boy"
+              class="w-100 delivery-img" data-delivery-boy>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section section-divider white testi">
+        <div class="container">
+          <p class="section-subtitle">Testimonials</p>
+          <h2 class="h2 section-title">
+            Our Customers <span class="span">Reviews</span>
+          </h2>
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+          <ul class="testi-list has-scrollbar">
+            <li class="testi-item">
+              <div class="testi-card">
+                <div class="profile-wrapper">
+                  <figure class="avatar">
+                    <img src="./images/avatar-1.jpg" width="80" height="80" loading="lazy" alt="Robert William, CEO Kingfisher">
+                  </figure>
+                  <div>
+                    <h3 class="h4 testi-name">Robert William</h3>
+                    <p class="testi-title">CEO Kingfisher</p>
+                  </div>
+                </div>
+                <blockquote class="testi-text">
+                  "I would be lost without Foodie. I would like to personally thank you for your outstanding product."
+                </blockquote>
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </li>
+            <!-- Other testimonial items remain unchanged -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="section section-divider gray banner">
+        <div class="container">
+          <ul class="banner-list">
+            <li class="banner-item banner-lg">
+              <div class="banner-card">
+                <img src="./images/banner-1.jpg" width="550" height="450" loading="lazy"
+                  alt="Discount For Delicious Tasty Burgers!" class="banner-img">
+                <div class="banner-item-content">
+                  <p class="banner-subtitle">50% Off Now!</p>
+                  <h3 class="banner-title">Discount For Delicious Tasty Burgers!</h3>
+                  <p class="banner-text">Sale off 50% only this week</p>
+                  <button class="btn">Order Now</button>
+                </div>
+              </div>
+            </li>
+            <!-- Other banner items remain unchanged -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="section section-divider white blog" id="blog">
+        <div class="container">
+          <p class="section-subtitle">Latest Blog Posts</p>
+          <h2 class="h2 section-title">
+            This Is All About <span class="span">Foods</span>
+          </h2>
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+          <ul class="blog-list">
+            <li>
+              <div class="blog-card">
+                <div class="card-banner">
+                  <img src="./images/blog-1.jpg" width="600" height="390" loading="lazy"
+                    alt="What Do You Think About Cheese Pizza Recipes?" class="w-100">
+                  <div class="badge">Pizza</div>
+                </div>
+                <div class="card-content">
+                  <div class="card-meta-wrapper">
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      <time class="meta-info" datetime="2022-01-01">Jan 01 2022</time>
+                    </a>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+                      <p class="meta-info">Jonathan Smith</p>
+                    </a>
+                  </div>
+                  <h3 class="h3">
+                    <a href="#" class="card-title">What Do You Think About Cheese Pizza Recipes?</a>
+                  </h3>
+                  <p class="card-text">
+                    Financial experts support or help you to find out which way you can raise your funds more...
+                  </p>
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <!-- Other blog items remain unchanged -->
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top" style="background-image: url('./images/footer-illustration.png')">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Foodie<span class="span">.</span></a>
+          <p class="footer-text">
+            Financial experts support or help you to find out which way you can raise your funds more.
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+          <li>
+            <p class="footer-list-item">+91 7045386782</p>
+          </li>
+          <li>
+            <p class="footer-list-item"><a href="mailto:support@foodie.com">support@foodie.com</a></p>
+          </li>
+          <li>
+            <address class="footer-list-item">Rani Baug, Near Byculla, Mumbai</address>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+          <li>
+            <p class="footer-list-item">Monday-Friday: 08:00-22:00</p>
+          </li>
+          <li>
+            <p class="footer-list-item">Tuesday: 16:00-Till Midnight</p>
+          </li>
+          <li>
+            <p class="footer-list-item">Saturday: 10:00-16:00</p>
+          </li>
+        </ul>
+        <form action="/submit-booking" method="POST" class="footer-form">
+          <p class="footer-list-title">Book a Table</p>
+          <div class="input-wrapper">
+            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
+              class="input-field">
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+              class="input-field">
+          </div>
+          <div class="input-wrapper">
+            <select name="total_person" aria-label="Total person" class="input-field">
+              <option value="1 person">1 Person</option>
+              <option value="2 person">2 Person</option>
+              <option value="3 person">3 Person</option>
+              <option value="4 person">4 Person</option>
+              <option value="5 person">5 Person</option>
+            </select>
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field" required>
+          </div>
+          <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
+          <button type="submit" class="btn">Book a Table</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Basic JavaScript Fallback -->
+  <script>
+    // Navigation toggle
+    const navToggleBtn = document.querySelector('[data-menu-toggle-btn]');
+    const navbar = document.querySelector('[data-navbar]');
+    navToggleBtn.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+      navToggleBtn.classList.toggle('active');
+    });
+
+    // Search box toggle
+    const searchBtn = document.querySelector('[data-search-btn]');
+    const searchContainer = document.querySelector('[data-search-container]');
+    const searchCloseBtn = document.querySelector('[data-search-close-btn]');
+    searchBtn.addEventListener('click', () => {
+      searchContainer.classList.toggle('active');
+    });
+    searchCloseBtn.addEventListener('click', () => {
+      searchContainer.classList.remove('active');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
